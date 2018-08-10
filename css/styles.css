@@ -1,0 +1,24 @@
+.header {
+  background-color: white;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+.header a {
+  font-size: 16px;
+  padding: 16px;
+  float: right;
+}
+.header img {
+  float: left;
+  padding-left: 50px
+}
+.coding {
+  background-image: url("../img/coding.jpg");
+  background-size: 100%;
+}
+.jumbotron h1 {
+  text-align: center;
+  font-family: sans-serif;
+  color: black;
+}
