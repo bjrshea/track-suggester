@@ -11,28 +11,30 @@
     <!-- Header -->
     <div class="cotainer">
       <div class="header">
-        <a href="#sign-up">SIGN UP</a>
-        <a href="#about">ABOUT</a>
-        <a href="#for-employers">FOR EMPLOYERS</a>
-        <a href="#schedule">SCHEDULE</a>
-        <a class="active" href="#prospective-students">PROSPECTIVE STUDENTS</a>
+        <a href="https://www.epicodus.com/sign-up/"><span class="sign-up">SIGN UP</span></a>
+        <a href="https://www.epicodus.com/about/">ABOUT</a>
+        <a href="https://www.epicodus.com/employers/">FOR EMPLOYERS</a>
+        <a href="https://www.epicodus.com/portland/">SCHEDULE</a>
+        <a href="https://www.epicodus.com/what-to-expect/">PROSPECTIVE STUDENTS</a>
         <img src="img/epicodus.png" alt="Epicodus logo">
       </div>
     </div>
-    <div class="jumbotron coding">
+    <div class="jumbotron">
       <h1><strong>Track Suggester</strong></h1>
     </div>
-      <!-- Overview -->
+    <!-- Overview -->
     <div class="container">
-      <h2>Overview</h2>
-      <p>At Epicodus, you have a few options to choose from when it comes to what language you want to learn. Each language has their own unique syntax as well as different career opportunities once you graduate the program.</p>
-      <p>Directly below are the 3 different tracks we offer and some descriptions on each.</p>
-      <p>Once you've gotten yourself aquainted with the different languages, and their frameworks, go ahead and fill out the questionnaire to see what the best fit is for you!</p>
+      <h2>Overview:</h2>
+      <div class="well" id="overview-id">
+        <p>At Epicodus, you have a few options to choose from when it comes to what language you want to learn. Each language has their own unique syntax as well as different career opportunities once you graduate the program.</p>
+        <p>Directly below are the 3 different tracks we offer and some descriptions on each.</p>
+        <p>Once you've gotten yourself aquainted with the different languages, and their frameworks, go ahead and fill out the questionnaire to see what the best fit is for you!</p>
+      </div>
       <!-- Course Descriptions -->
       <div class="row">
         <div class="col-md-4">
           <div class="panel panel-default">
-            <div class="panel-heading">Ruby/Rails</div>
+            <div class="panel-heading"><strong>Ruby/Rails</strong></div>
             <div class="panel-body">
               <ul>
                 <li>Builds interactive web applications.</li>
@@ -44,7 +46,7 @@
         </div>
         <div class="col-md-4">
           <div class="panel panel-default">
-            <div class="panel-heading">JavaScript/React</div>
+            <div class="panel-heading"><strong>JavaScript/React</strong></div>
             <div class="panel-body">
               <ul>
                 <li>Coined as "The Language of the Web."</li>
@@ -56,10 +58,10 @@
         </div>
         <div class="col-md-4">
           <div class="panel panel-default">
-            <div class="panel-heading">C#/.NET</div>
+            <div class="panel-heading"><strong>C#/.NET</strong></div>
             <div class="panel-body">
               <ul>
-                <li>Ss an object-oriented programming language backed by Microsoft.</li>
+                <li>This is an object-oriented programming language backed by Microsoft.</li>
                 <li>The language behind many desktop applications.</li>
                 <li>Typically, used for building internal software for big companies.</li>
               </ul>
@@ -68,102 +70,104 @@
         </div>
       </div>
       <!-- Questionnaire -->
-      <h2>Track Suggester Questionnaire</h2>
+      <h2>Track Suggester Questionnaire:</h2>
       <form id="form-1">
-        <label>What kind of company would you like to work for?</label>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question1" value="answer1">
-            I'd like to work freelance.
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question1" value="answer2">
-            A start-up with an inspiring vision.
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question1" value="answer3">
-            A big company with great benefits.
-          </label>
-        </div>
-        <label>Do you prefer frontend or backend development?</label>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question2" value="answer4">
-            Frontend
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question2" value="answer5">
-            Backend
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question2" value="answer6">
-            Not sure
-          </label>
-        </div>
-        <label>Pick your favorite website among these 3:</label>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question3" value="answer7">
-            Bear Grylls' Website
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question3" value="answer8">
-            Airbnb
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question3" value="answer9">
-            I don't like websites, I like apps.
-          </label>
-        </div>
-        <label>Which of these sounds best?</label>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question4" value="answer10">
-            Dynamic, limited libraries, and a smaller community.
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question4" value="answer11">
-            Dynamic, vast libraries, big community.
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question4" value="answer12">
-            Static, good paying, good documentation & support.
-          </label>
-        </div>
-        <label>Choose the word that feels right.</label>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question5" value="answer13">
-            Coffee
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question5" value="answer14">
-            Train
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question5" value="answer15">
-            Music
-          </label>
+        <div class="well">
+          <label>What kind of company would you like to work for?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question1" value="answer1">
+              I'd like to work freelance.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question1" value="answer2">
+              A start-up with an inspiring vision.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question1" value="answer3">
+              A big company with great benefits.
+            </label>
+          </div>
+          <label>Do you prefer frontend or backend development?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question2" value="answer4">
+              Frontend
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question2" value="answer5">
+              Backend
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question2" value="answer6">
+              Not sure
+            </label>
+          </div>
+          <label>Pick your favorite website among these 3:</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question3" value="answer7">
+              Bear Grylls' Website
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question3" value="answer8">
+              Airbnb
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question3" value="answer9">
+              I don't like websites, I like apps.
+            </label>
+          </div>
+          <label>Which of these sounds best?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question4" value="answer10">
+              Dynamic, limited libraries, and a smaller community.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question4" value="answer11">
+              Dynamic, vast libraries, big community.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question4" value="answer12">
+              Static, good paying, good documentation & support.
+            </label>
+          </div>
+          <label>Choose the word that feels right.</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question5" value="answer13">
+              Coffee
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question5" value="answer14">
+              Train
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question5" value="answer15">
+              Music
+            </label>
+          </div>
         </div>
         <!-- Submit form here! -->
         <button type="submit" class="btn btn-primary btn-lg">Submit</button>

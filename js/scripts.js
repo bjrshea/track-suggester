@@ -1,14 +1,14 @@
 $(document).ready(function(){
   $("#form-1").submit(function(event) {
-    var js = 0
-    var ruby = 0
-    var sharp = 0
     var uno = $("input:radio[name=question1]:checked").val();
     var dos = $("input:radio[name=question2]:checked").val();
     var tres = $("input:radio[name=question3]:checked").val();
     var quatro = $("input:radio[name=question4]:checked").val();
     var cinco = $("input:radio[name=question5]:checked").val();
-
+    var js = 0
+    var ruby = 0
+    var sharp = 0
+    
     if(uno === "answer1") {
       js += 1
     }
@@ -63,9 +63,20 @@ $(document).ready(function(){
     if(sharp >= 3) {
       alert("C#/.NET")
     }
-    if(sharp, ruby, js === 2) {
-      alert("It looks like you're on the fence between two tracks! Maybe research all 3 and see which looks the most appealing. :-)")
+    if(sharp, ruby, js <= 2) {
+      alert("It looks like you're on the fence between two tracks! Please try again. :-)")
     }
     event.preventDefault();
   });
 });
+
+// If there were only 3 values -- answer1, answer2, and answer3 -- why wouldn't this work?
+
+// if(uno, dos, tres, quatro, cinco === "answer1") {
+//   js += 1
+// }
+// if(uno, dos, tres, quatro, cinco === "answer2") {
+//   ruby += 1
+// }
+// if(uno, dos, tres, quatro, cinco === "answer3") {
+//   sharp += 1
