@@ -1,3 +1,6 @@
+body {
+  font-family: 'Muli', sans-serif;
+}
 #overview-id p {
   font-size: 17px
 }
@@ -19,7 +22,9 @@
   padding-left: 20px
 }
 .sign-up {
+  color: white;
   background-color: teal;
+  padding: 10px;
 }
 .jumbotron {
   background-image: url("../img/coding.jpg");
@@ -29,6 +34,5 @@
 .jumbotron h1 {
   padding-top: 140px !important;
   text-align: center;
-  font-family: sans-serif;
   color: black;
 }
