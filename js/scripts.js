@@ -10,63 +10,83 @@ $(document).ready(function(){
     var ruby = 0;
     var sharp = 0;
 
-    if(uno === "answer1") {
+    if (freelance || preference || favorite || soundsBest || feelsRight === "jsAnswer") {
       js += 1;
-    }
-    if(uno === "answer2") {
+    } else if (freelance || preference || favorite || soundsBest || feelsRight === "rubyAnswer") {
       ruby += 1;
-    }
-    if(uno === "answer3") {
+    } else {
       sharp += 1;
     }
-    if(dos === "answer4") {
-      js += 1;
+
+    if (js >= 3) {
+      alert("JavaScript/React");
+    } else if (ruby >= 3) {
+      alert("Ruby/Rails");
+    } else if (sharp >= 3) {
+      alert("C#/.NET");
+    } else {
+      alert("It looks like you're on the fence between two tracks! Please try again. :-)");
     }
-    if(dos === "answer5") {
-      ruby += 1;
-    }
-    if(dos === "answer6") {
-      sharp += 1;
-    }
-    if(tres === "answer7") {
-      js += 1;
-    }
-    if(tres === "answer8") {
-      ruby += 1;
-    }
-    if(tres === "answer9") {
-      sharp += 1;
-    }
-    if(quatro === "answer10") {
-      js += 1;
-    }
-    if(quatro === "answer11") {
-      ruby += 1;
-    }
-    if(quatro === "answer12") {
-      sharp += 1;
-    }
-    if(cinco === "answer13") {
-      js += 1;
-    }
-    if(cinco === "answer14") {
-      ruby += 1;
-    }
-    if(cinco === "answer15") {
-      sharp += 1;
-    }
-    if(js >= 3) {
-      alert("JavaScript/React")
-    }
-    if(ruby >= 3) {
-      alert("Ruby/Rails")
-    }
-    if(sharp >= 3) {
-      alert("C#/.NET")
-    }
-    if(sharp, ruby, js <= 2) {
-      alert("It looks like you're on the fence between two tracks! Please try again. :-)")
-    }
+
+
+
+    // if(uno === "answer1") {
+    //   js += 1;
+    // }
+    // if(uno === "answer2") {
+    //   ruby += 1;
+    // }
+    // if(uno === "answer3") {
+    //   sharp += 1;
+    // }
+    // if(dos === "answer4") {
+    //   js += 1;
+    // }
+    // if(dos === "answer5") {
+    //   ruby += 1;
+    // }
+    // if(dos === "answer6") {
+    //   sharp += 1;
+    // }
+    // if(tres === "answer7") {
+    //   js += 1;
+    // }
+    // if(tres === "answer8") {
+    //   ruby += 1;
+    // }
+    // if(tres === "answer9") {
+    //   sharp += 1;
+    // }
+    // if(quatro === "answer10") {
+    //   js += 1;
+    // }
+    // if(quatro === "answer11") {
+    //   ruby += 1;
+    // }
+    // if(quatro === "answer12") {
+    //   sharp += 1;
+    // }
+    // if(cinco === "answer13") {
+    //   js += 1;
+    // }
+    // if(cinco === "answer14") {
+    //   ruby += 1;
+    // }
+    // if(cinco === "answer15") {
+    //   sharp += 1;
+    // }
+    // if(js >= 3) {
+    //   alert("JavaScript/React")
+    // }
+    // if(ruby >= 3) {
+    //   alert("Ruby/Rails")
+    // }
+    // if(sharp >= 3) {
+    //   alert("C#/.NET")
+    // }
+    // if(sharp, ruby, js <= 2) {
+    //   alert("It looks like you're on the fence between two tracks! Please try again. :-)")
+    // }
   });
 });
 
