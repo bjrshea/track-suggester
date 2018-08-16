@@ -2,7 +2,7 @@ body {
   font-family: 'Muli', sans-serif;
 }
 #overview-id p {
-  font-size: 17px
+  font-size: 17px;
 }
 .header {
   background-color: white;
@@ -19,7 +19,7 @@ body {
 }
 .header img {
   float: left;
-  padding-left: 20px
+  padding-left: 20px;
 }
 .sign-up {
   color: white;
