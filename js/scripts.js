@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
   $("#form-1").submit(function(event) {
     event.preventDefault();
     var freelance = $("input:radio[name=freelance]:checked").val();
@@ -10,93 +10,66 @@ $(document).ready(function(){
     var ruby = 0;
     var sharp = 0;
 
-    if (freelance || preference || favorite || soundsBest || feelsRight === "jsAnswer") {
+    if(freelance === "answer1") {
       js += 1;
-    } else if (freelance || preference || favorite || soundsBest || feelsRight === "rubyAnswer") {
+    } else if(freelance === "answer2") {
       ruby += 1;
     } else {
       sharp += 1;
     }
 
-    if (js >= 3) {
-      alert("JavaScript/React");
-    } else if (ruby >= 3) {
-      alert("Ruby/Rails");
-    } else if (sharp >= 3) {
-      alert("C#/.NET");
+    if(preference === "answer4") {
+      js += 1;
+    } else if(preference === "answer5") {
+      ruby += 1;
     } else {
-      alert("It looks like you're on the fence between two tracks! Please try again. :-)");
+      sharp += 1;
     }
 
+    if(favorite === "answer7") {
+      js += 1;
+    } else if(favorite === "answer8") {
+      ruby += 1;
+    } else {
+      sharp += 1;
+    }
 
+    if(soundsBest === "answer10") {
+      js += 1;
+    } else if(soundsBest === "answer11") {
+      ruby += 1;
+    } else {
+      sharp += 1;
+    }
 
-    // if(uno === "answer1") {
-    //   js += 1;
-    // }
-    // if(uno === "answer2") {
-    //   ruby += 1;
-    // }
-    // if(uno === "answer3") {
-    //   sharp += 1;
-    // }
-    // if(dos === "answer4") {
-    //   js += 1;
-    // }
-    // if(dos === "answer5") {
-    //   ruby += 1;
-    // }
-    // if(dos === "answer6") {
-    //   sharp += 1;
-    // }
-    // if(tres === "answer7") {
-    //   js += 1;
-    // }
-    // if(tres === "answer8") {
-    //   ruby += 1;
-    // }
-    // if(tres === "answer9") {
-    //   sharp += 1;
-    // }
-    // if(quatro === "answer10") {
-    //   js += 1;
-    // }
-    // if(quatro === "answer11") {
-    //   ruby += 1;
-    // }
-    // if(quatro === "answer12") {
-    //   sharp += 1;
-    // }
-    // if(cinco === "answer13") {
-    //   js += 1;
-    // }
-    // if(cinco === "answer14") {
-    //   ruby += 1;
-    // }
-    // if(cinco === "answer15") {
-    //   sharp += 1;
-    // }
-    // if(js >= 3) {
-    //   alert("JavaScript/React")
-    // }
-    // if(ruby >= 3) {
-    //   alert("Ruby/Rails")
-    // }
-    // if(sharp >= 3) {
-    //   alert("C#/.NET")
-    // }
-    // if(sharp, ruby, js <= 2) {
-    //   alert("It looks like you're on the fence between two tracks! Please try again. :-)")
-    // }
+    if(feelsRight === "answer13") {
+      js += 1;
+    } else if(feelsRight === "answer14") {
+      ruby += 1;
+    } else {
+      sharp += 1;
+    }
+
+    if(js >= 3) {
+      $("#ruby").hide();
+      $("#sharp").hide();
+      $("#fence").hide();
+      $("#javascript").show();
+    } else if(ruby >= 3) {
+      $("#javascript").hide();
+      $("#sharp").hide();
+      $("#fence").hide();
+      $("#ruby").show();
+    } else if(sharp >= 3) {
+      $("#javascript").hide();
+      $("#ruby").hide();
+      $("#fence").hide();
+      $("#sharp").show();
+    } else {
+      $("#javascript").hide();
+      $("#ruby").hide();
+      $("#sharp").hide();
+      $("#fence").show();
+    }
   });
 });
-
-// If there were only 3 values -- answer1, answer2, and answer3 -- why wouldn't this work?
-
-// if(uno, dos, tres, quatro, cinco === "answer1") {
-//   js += 1
-// }
-// if(uno, dos, tres, quatro, cinco === "answer2") {
-//   ruby += 1
-// }
-// if(uno, dos, tres, quatro, cinco === "answer3") {
-//   sharp += 1

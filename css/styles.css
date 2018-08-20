@@ -1,6 +1,13 @@
 body {
   font-family: 'Muli', sans-serif;
 }
+#javascript, #ruby, #sharp, #fence {
+  display: none;
+  text-align: center;
+  font-size: 24pt;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 #overview-id p {
   font-size: 17px;
 }
